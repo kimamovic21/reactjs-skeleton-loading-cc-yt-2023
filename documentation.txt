@@ -1,0 +1,21 @@
+Skeleton Loading in React Like a PRO!
+(https://www.youtube.com/watch?v=OEPpwkwOhBU)
+
+-instaliramo Vite ReactJS projekt 
+-u terminal ukucamo komandu npm create vite@latest (ime projekta)
+-instaliramo projekt sa komandom u terminalu npm i
+-instaliramo TailwindCSS pakete u terminalu
+-kreiramo folder components
+-u folderu components kreiramo komponentu Skeleton.jsx
+-kreiramo komponentu Card.jsx
+-u komponentu App.jsx importujemo komponente Card.jsx i Skeleton.jsx
+-u komponentama Card.jsx i Skeleton.jsx HTML elementima dodajemo className
+-u className dodajemo TailwindCSS klase
+-u folder assets dodajemo sliku headphones.jpg
+-u komponenti App.jsx kreiramo state varijablu const [loading, setLoading] = useState(true)
+-importujemo React Hook useEffect
+-kreiramo funkciju useEffect()
+-u funkciju useEffect() dodajemo funkciju setTimeout()
+-prvi argument funkcije setTimeout je funkcija, a drugi argument broj sekundi
+-u funkciju setTimeout() dodajemo funkciju setLoading(false)
+-u return izjavu, dodajemo uslov ternarni operator {loading ? <Skeleton /> : <Card />}
